@@ -1,11 +1,11 @@
-"use client";
+import { currentUser } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-import { useUser } from "@clerk/nextjs";
+export default async function Home() {
+  const user = await currentUser();
+  if (!user) redirect("/sign-in");
+  const name = user.firstName || "Guest";
 
-export default function Home() {
-  const { user } = useUser();
-  const name = user?.firstName || "Guest";
-  ``;
   return (
     <div className="flex h-screen flex-col items-center justify-center">
       <h1>Welcome {name}</h1>

@@ -14,7 +14,9 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={`${fonts.bricolage.className} antialiased`}>
-          <AuthWrapper>{children}</AuthWrapper>
+          {/* <AuthWrapper> */}
+          {children}
+          {/* </AuthWrapper> */}
         </body>
       </html>
     </ClerkProvider>
