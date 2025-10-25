@@ -25,17 +25,15 @@ export function SidebarLink({
       href={url}
       className={cn(
         "group flex items-center gap-2 rounded-md p-2 text-sm font-medium transition-all duration-200",
-        active
-          ? "bg-gray-200 text-gray-900"
-          : "text-gray-600 hover:bg-blue-600 hover:text-white",
+        active ? "bg-blue-600 text-white" : "hover:bg-gray-200 text-gray-600",
       )}
     >
       {Icon && (
         <IconWrapper
           icon={Icon}
           className={cn(
-            "h-4 w-4 shrink-0 transition-colors duration-200",
-            active ? "text-gray-600" : "text-gray-600 group-hover:text-white",
+            "h-4 w-4 shrink-0 text-gray-600 transition-colors duration-200",
+            active && "text-white",
           )}
         />
       )}
