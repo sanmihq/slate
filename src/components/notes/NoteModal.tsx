@@ -58,7 +58,7 @@ export default function NoteModal({
                 placeholder="Note title"
                 value={title}
                 onValueChange={setTitle}
-x              />
+              />
             </ModalHeader>
             <ModalBody>
               <NoteEditor value={content} onChange={setContent} />
