@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block API routes and private areas
+Disallow: /api/
+Disallow: /notes/
+Disallow: /archive/
+Disallow: /tags/
+
+Sitemap: https://slateapp.vercel.app/sitemap.xml
