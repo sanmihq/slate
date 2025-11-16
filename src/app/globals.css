@@ -120,3 +120,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+.editor-content-area p,
+.editor-content-area ul,
+.editor-content-area ol,
+.editor-content-area h1,
+.editor-content-area h2,
+.editor-content-area h3 {
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.25rem;
+  line-height: 1.2;
+}
+
+.editor-content-area > :last-child {
+  margin-block-end: 0;
+}
